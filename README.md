@@ -68,7 +68,7 @@ You can use the `gutter` (px) property of `Row` as grid spacing.
 Flexbox params `start`, `center`, `end`, `space-between` and `space-around` can be passed to `Row` and sort columns inside.
 
 ```
-<Row justify="start" align="top">
+<Row gutter={40} justify="start" align="top">
    <Col span={4}>col-4</Col>
    <Col span={4}>col-4</Col>
    <Col span={4}>col-4</Col>
@@ -80,7 +80,7 @@ Flexbox params `start`, `center`, `end`, `space-between` and `space-around` can 
 ---
 
 ```
-<Row justify="center" align="bottom">
+<Row gutter={40} justify="center" align="bottom">
    <Col span={4}>col-4</Col>
    <Col span={4}>col-4</Col>
    <Col span={4}>col-4</Col>
@@ -93,7 +93,7 @@ Flexbox params `start`, `center`, `end`, `space-between` and `space-around` can 
 ---
 
 ```
-<Row justify="end" align="middle">
+<Row gutter={40} justify="end" align="middle">
    <Col span={4}>col-4</Col>
    <Col span={4}>col-4</Col>
    <Col span={4}>col-4</Col>
@@ -107,7 +107,7 @@ Flexbox params `start`, `center`, `end`, `space-between` and `space-around` can 
 Based on Bootstrap media queries here five dimensions: `xs`, `sm`, `md`, `lg`, `xl`.
 
 ```
-<Row justify="end" align="center">
+<Row gutter={40} justify="end" align="center">
   <Col xs={2} sm={4} md={6} lg={8} xl={10}>xl-10</Col>
   <Col xs={10} sm={8} md={6} lg={4} xl={2}>xl-2</Col>
 </Row>
@@ -120,7 +120,7 @@ Based on Bootstrap media queries here five dimensions: `xs`, `sm`, `md`, `lg`, `
 `Span` and `offset` property can be embedded into `xs`, `sm`, `md`, `lg`, `xl` such as `xl = {{span: 10}}`.
 
 ```
-<Row justify="end" align="center">
+<Row gutter={40} justify="end" align="center">
   <Col xs={{ span: 6, offset: 2 }}>xs-6</Col>
   <Col span={4}>col-4</Col>
 </Row>
