@@ -12,22 +12,22 @@ Basic Usage
 
 1. Install via npm
 
-  ```
-  npm i -D react-simple-flex-grid
-  ```
+    ```
+    npm i -D react-simple-flex-grid
+    ```
 2. Import Row, Col with grid styles
 
-  ```
-  import { Row, Col } from 'react-simple-flex-grid';
-  import "react-simple-flex-grid/lib/main.css";
-  ```
+    ```
+    import { Row, Col } from 'react-simple-flex-grid';
+    import "react-simple-flex-grid/lib/main.css";
+    ```
 3. Enjoy
-  ```
-  <Row>
-     <Col span={6}>Column</Col>
-     <Col span={6}>Column</Col>
-  </Row>
-  ```
+    ```
+    <Row>
+       <Col span={6}>Column</Col>
+       <Col span={6}>Column</Col>
+    </Row>
+    ```
 
   ![Imgur](http://i.imgur.com/UpGfkrh.png)
 
@@ -77,6 +77,8 @@ Flexbox params `start`, `center`, `end`, `space-between` and `space-around` can 
 
 ![Imgur](http://i.imgur.com/mk0x5P1.png)
 
+---
+
 ```
 <Row justify="center" align="bottom">
    <Col span={4}>col-4</Col>
@@ -84,7 +86,11 @@ Flexbox params `start`, `center`, `end`, `space-between` and `space-around` can 
    <Col span={4}>col-4</Col>
 </Row>
 ```
+
 ![Imgur](http://i.imgur.com/EcsT2MC.png)
+
+
+---
 
 ```
 <Row justify="end" align="middle">
