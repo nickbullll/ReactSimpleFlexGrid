@@ -11,6 +11,15 @@ const sassLoaders = {
       localIdentName: '[local]'
     }
   }, {
+    loader: 'postcss-loader',
+    options: {
+      plugins() {
+        return [
+          require('autoprefixer')
+        ];
+      }
+    }
+  }, {
     loader: 'sass-loader'
   }]
 };

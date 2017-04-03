@@ -8,10 +8,17 @@ const sassLoaders = {
   use: [{
     loader: 'css-loader',
     query: {
-      path: path.join(__dirname, './lib'),
       modules: true,
-      minimize: true,
       localIdentName: '[local]'
+    }
+  }, {
+    loader: 'postcss-loader',
+    options: {
+      plugins() {
+        return [
+          require('autoprefixer')
+        ];
+      }
     }
   }, {
     loader: 'sass-loader'
