@@ -107,7 +107,7 @@ Flexbox params `start`, `center`, `end`, `space-between` and `space-around` can 
 Based on Bootstrap media queries here five dimensions: `xs`, `sm`, `md`, `lg`, `xl`.
 
 ```
-<Row gutter={40} justify="end" align="center">
+<Row gutter={40}>
   <Col xs={2} sm={4} md={6} lg={8} xl={10}>xl-10</Col>
   <Col xs={10} sm={8} md={6} lg={4} xl={2}>xl-2</Col>
 </Row>
@@ -120,7 +120,7 @@ Based on Bootstrap media queries here five dimensions: `xs`, `sm`, `md`, `lg`, `
 `Span` and `offset` property can be embedded into `xs`, `sm`, `md`, `lg`, `xl` such as `xl = {{span: 10}}`.
 
 ```
-<Row gutter={40} justify="end" align="center">
+<Row gutter={40}>
   <Col xs={{ span: 6, offset: 2 }}>xs-6</Col>
   <Col span={4}>col-4</Col>
 </Row>
