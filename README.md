@@ -10,12 +10,12 @@ Layout based on 12 Grids System.
 Basic Usage
 -----
 
-1. Install via npm
+1. Install via `npm`
 
     ```
     npm i -D react-simple-flex-grid
     ```
-2. Import Row, Col with grid styles
+2. Import `Row`, `Col` and grid styles
 
     ```
     import { Row, Col } from 'react-simple-flex-grid';
@@ -162,5 +162,7 @@ FAQ
 This component based on [ant design grid]( https://ant.design/components/grid/). Huge thanks them for a such an awesome work.
 
 ### Updates
+
+1.0.2 Added autoprefixer and Fixed Safari bug
 
 1.0.1 first release
