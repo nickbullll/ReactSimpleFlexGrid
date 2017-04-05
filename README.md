@@ -150,6 +150,13 @@ Based on Bootstrap media queries here five dimensions: `xs`, `sm`, `md`, `lg`, `
 | lg       | ≥1200px, could be a span value or a object contain above props                         | number/object | -       |
 | xl       | ≥1600px, could be a span value or a object contain above props                         | number/object | -       |
 
+How to test example locally ?
+---
+1. `git clone https://github.com/abraztsov/ReactSimpleFlexGrid.git`
+2. `cd ReactSimpleFlexGrid`
+3. `npm start`
+4. Go to `localhost:8080`
+
 Feature Requests / Find Bug ?
 ---
 
