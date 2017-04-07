@@ -63,6 +63,21 @@ You can use the `gutter` (px) property of `Row` as grid spacing.
 
 ![Imgur](http://i.imgur.com/L2ZuRpa.png)
 
+### Column Order 🤙
+
+`Order` property can easily change column order.
+
+```
+<Row gutter={40}>
+   <Col span={4} order={4}>4 col-4</Col>
+   <Col span={4} order={3}>3 col-4</Col>
+   <Col span={4} order={2}>2 col-4</Col>
+   <Col span={4} order={1}>1 col-4</Col>
+</Row>
+```
+
+![Imgur](http://i.imgur.com/7GQVn2D.png)
+
 ### Column Sort 🤘
 
 Flexbox params `start`, `center`, `end`, `space-between` and `space-around` can be passed to `Row` and sort columns inside.
@@ -144,6 +159,7 @@ Based on Bootstrap media queries here five dimensions: `xs`, `sm`, `md`, `lg`, `
 |----------|----------------------------------------------------------------------------------------|---------------|---------|
 | span     | the number of cells,0 corresponds to display: none                                     | number        | none    |
 | offset   | the number of cells to the left of the grid spacing, no cell in grid spacing           | number        | 0       |
+| order    | `col` number in the row            | number        | none       |
 | xs       | <768px and also default setting, could be a span value or a object contain above props | number/object | -       |
 | sm       | ≥768px, could be a span value or a object contain above props                          | number/object | -       |
 | md       | ≥992px, could be a span value or a object contain above props                          | number/object | -       |
@@ -162,6 +178,10 @@ FAQ
 This component based on [ant design grid]( https://ant.design/components/grid/). Huge thanks them for a such an awesome work.
 
 ### Updates
+
+1.1.0 Added `order` param
+
+1.0.3 Removed unnecessary package
 
 1.0.2 Added autoprefixer and Fixed Safari bug
 

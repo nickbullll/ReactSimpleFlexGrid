@@ -1,6 +1,6 @@
 {
   "name": "react-simple-flex-grid",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "",
   "keywords": [
     "react",
@@ -15,7 +15,8 @@
     "clean:lib": "del lib umd",
     "start": "npm i && cross-env NODE_ENV=development webpack-dev-server --config ./config/webpack.config.babel.js",
     "build:lib": "cross-env NODE_ENV=production webpack ./src/index.js --config ./config/webpack.prod.config.babel.js",
-    "build": "npm run clean:lib && npm run build:lib"
+    "build": "npm run clean:lib && npm run build:lib",
+    "pack": "npm run build && npm pack"
   },
   "repository": {
     "type": "git",
