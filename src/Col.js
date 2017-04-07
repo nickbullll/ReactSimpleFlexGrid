@@ -5,7 +5,7 @@ import s from './style/index.scss';
 const stringOrNumber = PropTypes.oneOfType([PropTypes.string, PropTypes.number]);
 const numberOrObject = PropTypes.oneOfType([PropTypes.number, PropTypes.object]);
 
-function Col({ span, offset, className, children, prefix = 'rct-grid-col', ...others }) {
+function Col({ span, offset, className, children, prefix = 'rct-grid-col', order, ...others }) {
   let sizeClasses = {};
   ['xs', 'sm', 'md', 'lg', 'xl'].forEach((size) => {
     if (others[size]) {
@@ -18,13 +18,15 @@ function Col({ span, offset, className, children, prefix = 'rct-grid-col', ...ot
       delete others[size]; // To prevent a "Warning: Unknown props.."
       sizeClasses = Object.assign({}, sizeClasses, {
         [s[`${prefix}-${size}-${sizeParams.span}`]]: sizeParams.span,
-        [s[`${prefix}-${size}-offset-${sizeParams.offset}`]]: sizeParams.offset || sizeParams.offset === 0
+        [s[`${prefix}-${size}-offset-${sizeParams.offset}`]]: sizeParams.offset || sizeParams.offset === 0,
+        [s[`${prefix}-${size}-order-${sizeParams.order}`]]: sizeParams.order || sizeParams.order === 0
       });
     }
   });
   const classes = cx({
     [s[`${prefix}-${span}`]]: span !== undefined,
     [s[`${prefix}-offset-${offset}`]]: offset,
+    [s[`${prefix}-order-${order}`]]: order
   }, className, sizeClasses);
 
   return <div {...others} className={classes}>{children}</div>;
@@ -44,7 +46,8 @@ Col.propTypes = {
   lg: numberOrObject,
   xl: numberOrObject,
   offset: stringOrNumber,
-  prefix: PropTypes.string
+  prefix: PropTypes.string,
+  order: stringOrNumber
 };
 
 export default Col;

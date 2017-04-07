@@ -49,6 +49,9 @@
     .#{$prefix}-col#{$class}-offset-#{$i} {
       margin-left: percentage($i / $grid-columns);
     }
+    .#{$prefix}-col#{$class}-order-#{$i} {
+      order: $i;
+    }
   }
 }
 
