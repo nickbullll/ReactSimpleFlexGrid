@@ -22,8 +22,8 @@ export default class App extends React.Component {
     let colCode = '';
     for (let i = 0; i < colCount; i++) {
       cols.push(
-        <Col key={i.toString()} span={12 / colCount}>
-          <div style={{ display: 'flex', 'justifyContent': 'center', 'alignItems': 'center', height: '50px', background: `${i % 2 === 0 ? '#6fbdec' : '#2880b7'}`, 'color': '#FFF' }}>Column</div>
+        <Col key={i.toString()} md={{ span: `${12 / colCount}`, order: 12 - i }}>
+          <div style={{ display: 'flex', 'justifyContent': 'center', 'alignItems': 'center', height: '150px', fontSize: '1.5em', background: `${i % 2 === 0 ? 'rgb(30, 197, 228)' : 'rgb(45, 222, 175)'}`, 'color': '#FFF' }}>{i+1} col-4</div>
         </Col>
       );
       colCode += `  <Col span={${12 / colCount}} />\n`;
