@@ -1,5 +1,7 @@
 ReactSimpleFlexGrid
 =================
+[![npm version](https://badge.fury.io/js/react-simple-flex-grid.svg)](https://badge.fury.io/js/react-simple-flex-grid)
+
 
 A way to quickly add a Flexbox Grid Layout to your app 🚀
 
