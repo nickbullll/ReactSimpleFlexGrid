@@ -12,10 +12,14 @@ Layout based on 12 Grids System.
 Basic Usage
 -----
 
-1. Install via `npm`
+1. Install via `npm` and `yarn`
 
     ```
-    npm i -D react-simple-flex-grid
+    npm i -S react-simple-flex-grid
+    
+    // or
+    
+    yarn add react-simple-flex-grid
     ```
 2. Import `Row`, `Col` and grid styles
 
