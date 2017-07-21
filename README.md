@@ -192,10 +192,12 @@ This component based on [ant design grid]( https://ant.design/components/grid/).
 
 ### Updates
 
-1.1.0 Added `order` param
+You can see table for update information.
 
-1.0.3 Removed unnecessary package
-
-1.0.2 Added autoprefixer and Fixed Safari bug
-
-1.0.1 first release
+| No.  |  Version  | Breakdown  | Ket. |
+| :------------: | :------------: | ------------ | ------------ |
+| 1.  | 1.0.1  |   | First Release |
+| 2.  | 1.0.2  | - Added autoprefixer |  |
+| | |  - Fixed Safari bug| |
+| 3.  | 1.0.3  | Removed unnecessary package  | | 
+| 4.  | 1.1.0  |  Added order parameter  |  |  |
