@@ -1,5 +1,7 @@
 ReactSimpleFlexGrid
 =================
+[![npm version](https://badge.fury.io/js/react-simple-flex-grid.svg)](https://badge.fury.io/js/react-simple-flex-grid)
+
 
 A way to quickly add a Flexbox Grid Layout to your app 🚀
 
@@ -10,10 +12,14 @@ Layout based on 12 Grids System.
 Basic Usage
 -----
 
-1. Install via `npm`
+1. Install via `npm` and `yarn`
 
     ```
-    npm i -D react-simple-flex-grid
+    npm i -S react-simple-flex-grid
+    
+    // or
+    
+    yarn add react-simple-flex-grid
     ```
 2. Import `Row`, `Col` and grid styles
 
@@ -186,10 +192,12 @@ This component based on [ant design grid]( https://ant.design/components/grid/).
 
 ### Updates
 
-1.1.0 Added `order` param
+You can see table for update information.
 
-1.0.3 Removed unnecessary package
-
-1.0.2 Added autoprefixer and Fixed Safari bug
-
-1.0.1 first release
+| No.  |  Version  | Breakdown  | Ket. |
+| :------------: | :------------: | ------------ | ------------ |
+| 1.  | 1.0.1  |   | First Release |
+| 2.  | 1.0.2  | - Added autoprefixer |  |
+| | |  - Fixed Safari bug| |
+| 3.  | 1.0.3  | Removed unnecessary package  | | 
+| 4.  | 1.1.0  |  Added order parameter  |  |  |
