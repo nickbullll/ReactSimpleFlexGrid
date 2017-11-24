@@ -4,5 +4,4 @@ favicon.png
 node_modules
 coverage
 public
-lib
 umd
