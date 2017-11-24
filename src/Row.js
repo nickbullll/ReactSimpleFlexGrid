@@ -7,12 +7,14 @@ export default class Row extends React.Component {
   static defaultProps = {
     gutter: 0,
     justify: 'start',
-    align: 'top'
+    align: 'top',
+    direction: 'row'
   };
 
   static propTypes = {
     align: PropTypes.string,
     justify: PropTypes.string,
+    direction: PropTypes.string,
     className: PropTypes.string,
     children: PropTypes.node,
     gutter: PropTypes.number,
@@ -21,11 +23,12 @@ export default class Row extends React.Component {
   };
 
   render() {
-    const { justify, align, className, gutter, style, children,
+    const { justify, align, direction, className, gutter, style, children,
       prefix = 'rct-grid-row', ...others } = this.props;
     const classes = cx(s[`${prefix}`], {
       [s[`${prefix}-${justify}`]]: justify,
       [s[`${prefix}-${align}`]]: align,
+      [s[`${prefix}-${direction}`]]: direction,
     }, className);
     const rowStyle = gutter > 0 ? Object.assign({}, {
       marginLeft: gutter / -2,
