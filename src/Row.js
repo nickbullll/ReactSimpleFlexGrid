@@ -23,7 +23,7 @@ export default class Row extends React.Component {
   };
 
   render() {
-    const { justify, align, className, gutter, style, children,
+    const { justify, align, direction, className, gutter, style, children,
       prefix = 'rct-grid-row', ...others } = this.props;
     const classes = cx(s[`${prefix}`], {
       [s[`${prefix}-${justify}`]]: justify,
