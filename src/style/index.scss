@@ -13,6 +13,18 @@
   display: flex
 }
 
+.#{$prefix}-direction-row {
+  flex-direction: row;
+}
+
+.#{$prefix}-direction-column {
+  flex-direction: column;
+}
+
+.#{$prefix}-row-start {
+  justify-content: flex-start;
+}
+
 .#{$prefix}-row-start {
   justify-content: flex-start;
 }
