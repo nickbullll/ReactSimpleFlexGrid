@@ -5,12 +5,11 @@
   box-sizing: border-box;
   flex-direction: row;
   flex-wrap: wrap;
-  @include clearfix();
   @include border-box();
 }
 
 .#{$prefix}-row, .#{$prefix}-row:before, .#{$prefix}-row:after {
-  display: flex
+  display: flex;
 }
 
 .#{$prefix}-row-start {
