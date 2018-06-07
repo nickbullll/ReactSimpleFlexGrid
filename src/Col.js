@@ -18,7 +18,7 @@ function Col({ span, offset, className, children, prefix = 'rct-grid-col', order
       }
       delete others[size]; // To prevent a "Warning: Unknown props.."
       sizeClasses = Object.assign({}, sizeClasses, {
-        [s[`${prefix}-${size}-${sizeParams.span}`]]: sizeParams.span,
+        [s[`${prefix}-${size}-${sizeParams.span}`]]: typeof sizeParams.span !== 'undefined',
         [s[`${prefix}-${size}-offset-${sizeParams.offset}`]]: sizeParams.offset || sizeParams.offset === 0,
         [s[`${prefix}-${size}-order-${sizeParams.order}`]]: sizeParams.order || sizeParams.order === 0
       });

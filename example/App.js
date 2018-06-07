@@ -28,6 +28,11 @@ export default class App extends React.Component {
       );
       colCode += `  <Col span={${12 / colCount}} />\n`;
     }
+    cols.push(
+      <Col md={{ span: 0 }}>
+        <div style={{ display: 'flex', 'justifyContent': 'center', 'alignItems': 'center', height: '150px', fontSize: '1.5em', 'color': '#FFF' }}>col-4</div>
+      </Col>
+    );
     return (
       <div>
         <div style={{ marginBottom: 16 }}>

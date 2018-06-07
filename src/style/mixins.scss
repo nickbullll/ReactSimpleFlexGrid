@@ -41,16 +41,28 @@
 }
 
 @mixin create-grid-options($class) {
-  @for $i from 1 through $grid-columns {
-    .#{$prefix}-col#{$class}-#{$i} {
-      display: block;
-      width: percentage($i / $grid-columns);
-    }
-    .#{$prefix}-col#{$class}-offset-#{$i} {
-      margin-left: percentage($i / $grid-columns);
-    }
-    .#{$prefix}-col#{$class}-order-#{$i} {
-      order: $i;
+  @for $i from 0 through $grid-columns {
+    @if $i == 0 {
+      .#{$prefix}-col#{$class}-#{$i} {
+        display: none;
+      }
+      .#{$prefix}-col#{$class}-offset-#{$i} {
+        margin-left: 0;
+      }
+      .#{$prefix}-col#{$class}-order-#{$i} {
+        order: 0;
+      }
+    } @else {
+      .#{$prefix}-col#{$class}-#{$i} {
+        display: block;
+        width: percentage($i / $grid-columns);
+      }
+      .#{$prefix}-col#{$class}-offset-#{$i} {
+        margin-left: percentage($i / $grid-columns);
+      }
+      .#{$prefix}-col#{$class}-order-#{$i} {
+        order: $i;
+      }
     }
   }
 }
