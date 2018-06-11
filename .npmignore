@@ -5,3 +5,4 @@ node_modules/
 src/
 example/
 config/webpack.config.babel.js
+package-lock.json

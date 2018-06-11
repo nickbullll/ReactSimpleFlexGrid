@@ -6,3 +6,4 @@ coverage
 public
 lib
 umd
+*.tgz
