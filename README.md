@@ -156,7 +156,7 @@ Based on Bootstrap media queries here five dimensions: `xs`, `sm`, `md`, `lg`, `
 | Property | Description                                                                                         | Type   | Default |
 |----------|-----------------------------------------------------------------------------------------------------|--------|---------|
 | gutter   | grid spacing                                                                                        | number | 0       |
-| align    | the vertical alignment of the layout of flex: `top` `middle` `bottom`                               | string | start   |
+| align    | the vertical alignment of the layout of flex: `top` `middle` `bottom` `stretch`                     | string | start   |
 | justify  | horizontal arrangement of the layout of flex: `start` `end` `center` `space-around` `space-between` | string | start   |
 
 ### Col
@@ -198,6 +198,7 @@ You can see table for update information.
 | :------------: | :------------: | ------------ | ------------ |
 | 1.  | 1.0.1  |   | First Release |
 | 2.  | 1.0.2  | - Added autoprefixer |  |
-| | |  - Fixed Safari bug| |
+|     |        |  - Fixed Safari bug| |
 | 3.  | 1.0.3  | Removed unnecessary package  | | 
 | 4.  | 1.1.0  |  Added order parameter  |  |  |
+| 5.  | 1.3.0  |  Added stretch option to align property |  |  |
